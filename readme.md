@@ -1,1 +1,1 @@
-## Image creds- codeacademy
+## Image creds- codeacademy/me
