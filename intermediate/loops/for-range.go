@@ -7,9 +7,24 @@ import "fmt"
 
 func main() {
 	str := "Hello"
+
+	// Iterate over the string with both index and value
 	for index, value := range str {
-		//Use %c when you specifically want to print a character representation of a byte or rune (e.g., when iterating over strings).
+		// Use %c to print the character representation of a rune
 		fmt.Printf("Index: %d, Value: %c\n", index, value)
 	}
 
+	// Iterate over the string but ignore the index
+	// Using _ to ignore the index prevents syntax errors
+	for _, value := range str {
+		// Only use value (character representation of a rune)
+		fmt.Printf("Value: %c\n", value)
+	}
+
+	// Iterate over a string but ignore the value
+	// Using _ to ignore the value prevents syntax errors
+	for index, _ := range str {
+		// Only use index
+		fmt.Printf("Index: %d\n", index)
+	}
 }
