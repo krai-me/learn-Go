@@ -16,6 +16,9 @@ func main() {
 
 	// Iterate over the string but ignore the index
 	// Using _ to ignore the index prevents syntax errors
+	// // The underscore (_) is used as a placeholder to ignore values that you don't need.
+	// This allows you to avoid syntax errors while omitting unnecessary variables.
+
 	for _, value := range str {
 		// Only use value (character representation of a rune)
 		fmt.Printf("Value: %c\n", value)
