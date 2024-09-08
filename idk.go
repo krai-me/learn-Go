@@ -2,17 +2,22 @@ package main
 
 import "fmt"
 
-func main() {
-	donuts := map[string]int{
-		"frosted":   10,
-		"chocolate": 15,
-		"jelly":     8,
+	type Point struct {
+		x int
+		y int
 	}
-	fmt.Println(donuts)
 
-	delete(donuts, "frosted")
-	delete(donuts, "chocolate")
-	delete(donuts, "jelly")
+	// Checkpoint 1 goes here
+	type Circle struct {
+		point  Point
+		radius int
 
-	fmt.Println(donuts)
-}
+	}
+
+	func main() {
+		circle := Circle{Point{4, 5}, 2}
+
+		// Checkpoint 2 code goes here
+		fmt.Println(circle.point.x)
+		fmt.Println(circle)
+	}
