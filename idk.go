@@ -3,14 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	myTutors := []string{"Kirsty", "Mishell", "Jose", "Neil"}
-	changeLastElement(myTutors, "Bobby")
-	fmt.Println(myTutors)
-}
-
-func changeLastElement(array []string, value string) {
-	len := len(array)
-	if len > 0 {
-		array[len-1] = value
+	donuts := map[string]int{
+		"frosted":   10,
+		"chocolate": 15,
+		"jelly":     8,
 	}
+	fmt.Println(donuts)
+
+	delete(donuts, "frosted")
+	delete(donuts, "chocolate")
+	delete(donuts, "jelly")
+
+	fmt.Println(donuts)
 }
