@@ -26,7 +26,7 @@ func main() {
 	pointerToSteve.lastName = "Jobs"
 
 	// Print the updated employee details
-	fmt.Println("Updated Employee:", steve) // Output: Updated Employee: {Steven Jobs 34 Junior Manager}
+	fmt.Println("Updated Employee:", steve) // Output: Updated Employee: {Steve Jobs 34 Junior Manager}
 
 	// Using pointers in a function to modify the struct
 	rect := Rectangle{length: 10, width: 5}
