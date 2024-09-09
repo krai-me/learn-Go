@@ -17,6 +17,7 @@ func main() {
 	fmt.Println("Dereferenced value:", *pointerForInt) // Value at address
 
 	// Modify value through the pointer
+	// * (dereference operator): This accesses the value stored at the memory address a pointer is holding.
 	*pointerForInt += 2
 	fmt.Println("Updated value of minutes:", minutes) // Updated value
 
