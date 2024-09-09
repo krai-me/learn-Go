@@ -28,11 +28,9 @@ func main() {
 	r := rect{width: 10, height: 5}
 
 	// Call methods on the value receiver
-	fmt.Println("area: ", r.area())  // Output: area: 50
 	fmt.Println("perim:", r.perim()) // Output: perim: 30
 
 	// Call methods on the pointer receiver
 	rp := &r
-	fmt.Println("area: ", rp.area())  // Output: area: 50
-	fmt.Println("perim:", rp.perim()) // Output: perim: 30
+	fmt.Println("area: ", rp.area()) // Output: area: 50
 }
